@@ -3,7 +3,7 @@
 <html>
 
 <head>
-	<title>Class four map</title>
+	<title>Class five toronto map</title>
 
 	<meta name="viewport"content="width=device-width, initial-scale=1.0">
 	<meta charset="utf-8">
@@ -15,6 +15,7 @@
     <link href='https://api.mapbox.com/mapbox.js/v3.3.1/mapbox.css' rel='stylesheet' />
  
     <script src="toronto-rh-line.js" type="text/javascript"></script>
+    <script src="toronto-all-rail-stops.js" type="text/javascript"></script>
 
 	<style>
 		#map {
@@ -49,6 +50,7 @@
 	map.addLayer(mapboxTiles);
 
 	L.geoJSON(torontoRHLine).addTo(map);
+	L.geoJSON(torontoRHStops).addTo(map);
 
 	</script>
 
